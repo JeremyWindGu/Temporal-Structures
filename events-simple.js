@@ -26,7 +26,7 @@
   lines.forEach(line => {
     if (line.startsWith('66666')) {
       if (currentStorm) storms.push(currentStorm);
-      const name = line.slice(35, 60).trim();
+      const name = line.slice(30, 60).trim();
       currentStorm = { name, points: [] };
     // 1.3.2 非起始行则解析具体气象观测数据点 // Otherwise, parse point data
     } else if (currentStorm) {
